@@ -52,6 +52,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             className="product-image"
             src={product.img_url}
             style={{ height: 400, width: "100%" }}
+            alt="bulb"
           />
           <div className="product-power-description">
             <p className="product-name">{product.name}</p>
@@ -64,7 +65,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             <p>&#163;{priceValue(product.price)}</p>
           </div>
           <div className="action-buttons">
-            <button className="minus" onClick={decrementCount}>
+            <button className="minus" onClick={decrementCount} aria-label="minus">
               -
             </button>
             <div className="quantity">
@@ -79,7 +80,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
           </div>
         </div>
         <div className="cart-button">
-          <button onClick={addToCart}>Add to cart</button>
+          <button onClick={addToCart} aria-label="Add to cart">Add to cart</button>
         </div>
       </div>
       <div className="product-description">
@@ -150,7 +151,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         </div>
       </div>
       <div className="product-description">
-        <p>
+        <p title="footer">
           Octopus Energy Ltd is a company registered in England and Wales.
           Registered number: 09263424. Registered office: 33 Holborn, London,
           EC1N 2HT. Trading office: 20-24 Broadwick Street, London, W1F 8HT.

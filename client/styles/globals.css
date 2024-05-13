@@ -1,0 +1,195 @@
+/* Octopus Energy brand colours used in the design */
+:root {
+  --hemocyanin: #180048;
+  --ice: #f0ffff;
+  --plum: #600e6b;
+  --purpleHaze: #a49fc8;
+  --siphon: #100030;
+  --sohoLights: #f050f8;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Gotham, helvetica, arial, sans-serif;
+  color: var(--ice);
+}
+
+body {
+  background: var(--siphon);
+}
+
+.home {
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.products {
+  text-align: center;
+}
+
+.product-image-elements {
+  display: inline-block;
+  padding: 2em;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.logo {
+  width: 25%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.basket {
+  width: 10%;
+  display: flex;
+}
+
+.product-image {
+  border-radius: 1em;
+}
+
+.product-name {
+  font-size: 2em;
+  margin: 14px 0px 5px 0px;
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.625em;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.action-buttons button {
+  padding: 0.3em;
+  border-radius: 0.5em;
+  height: 2em;
+  width: 2em;
+}
+
+.minus {
+  background-color: var(--plum);
+  color: var(--ice);
+  border: none;
+}
+
+.plus {
+  background-color: var(--sohoLights);
+  border: none;
+}
+
+.quantity {
+  text-align: center;
+  padding: 0 0.25em;
+}
+
+.quantity-text {
+  margin: -25px 0px 0px 0px;
+  font-size: 10px;
+}
+
+.quantity-number {
+  margin: 8px 0px 0px 0px;
+  font-size: larger;
+}
+
+.basket-value {
+  margin: 8px 0px 0px 7px;
+  font-size: small;
+}
+
+.cart-button button {
+  background-color: var(--sohoLights);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 16px;
+}
+
+.product-description {
+  border: 1px solid #000000;
+  margin: 10px 0px;
+  text-align: left;
+  padding: 0 2em;
+  background: var(--hemocyanin);
+}
+
+.product-description p {
+  font-size: 0.5em;
+  line-height: 1.5em;
+  color: var(--purpleHaze);
+}
+
+.product-description-text {
+  text-align: left;
+  min-width: 100%;
+  width: 0;
+}
+
+.product-description-text h5 {
+  font-size: 16px;
+}
+
+.product-description-text p {
+  font-size: 0.875em;
+  line-height: 1.2em;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 0.7em;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  font-size: 0.75em;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 0.5em 0;
+}
+
+.product-specifications {
+  text-align: left;
+  padding: 0 2em;
+}
+
+.product-power-description {
+  text-align: left;
+}
+
+.product-power-description span {
+  font-size: 0.8em;
+  color: var(--purpleHaze);
+}
